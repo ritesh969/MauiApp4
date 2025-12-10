@@ -1,0 +1,14 @@
+﻿.profile-container {
+    margin-top: 20px;
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.profile-image {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
