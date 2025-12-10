@@ -1,0 +1,20 @@
+﻿@page "/profile"
+
+<h2>Student Profile</h2>
+
+<div class="profile-container">
+
+    <img src="images/student1.jpg" alt="Student Photo" class="profile-image" />
+
+    <p><strong>Name:</strong> @studentName</p>
+    <p><strong>Course:</strong> @courseName</p>
+    <p><strong>Batch Year:</strong> @batchYear</p>
+</div>
+
+@code {
+    // Storing values in variables
+    string photoPath = "images/student1.jpg";
+    string studentName = "Ram";
+    string courseName = ".NET MAUI Hybrid Training";
+    string batchYear = "2025";
+}
