@@ -1,0 +1,43 @@
+﻿@page "/students"
+
+<h3>Students</h3>
+
+@if (Role == "Admin") // equal to symbol to make it see the message for admin and != to not show....
+{
+    <h1>This heading is for Admin only</h1>
+}
+<h1>@Name is a good human being</h1>
+
+@foreach (var students in studentsList)
+{
+    <p>Student @students.Name is of @students.Age Age</p>
+}
+
+
+<img src="images/homepage.jpg" alt="" />
+<img src="images/IICImage.png" alt="Image of college" />
+
+<button onclick="@SaveToDatabase">Click here</button>
+
+@code {
+    public string Name = "John Doe";
+
+    public string Role = "Admin";
+
+    public class Student
+       {
+        public string Name { get; set; }
+        public int Age { get; set; }
+    }
+
+    List<Student> studentsList = new List<Student> // initializing the object
+    {
+        new Student { Name = "Alice", Age = 20 },
+        new Student { Name = "Bob", Age = 22 },
+    };
+
+    public void SaveToDatabase()  
+    {
+     //   
+    }
+}

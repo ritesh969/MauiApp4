@@ -1,0 +1,25 @@
+﻿.intro-title {
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    color: #1a2433;
+}
+
+.intro-container {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    margin-top: 1rem;
+}
+
+.intro-image {
+    width: 280px;
+    max-width: 40%;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.intro-text {
+    max-width: 60%;
+    line-height: 1.5;
+    color: #333;
+}
