@@ -1,0 +1,52 @@
+﻿.monkeys-title {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.no-monkeys {
+    text-align: center;
+    color: #c0392b;
+    font-weight: 600;
+}
+
+.monkey-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding: 0 10px;
+}
+
+.monkey-card {
+    width: 260px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    padding: 12px;
+    text-align: center;
+    transition: transform 0.12s ease;
+}
+
+    .monkey-card:hover {
+        transform: translateY(-6px);
+    }
+
+    .monkey-card img {
+        width: 100%;
+        height: 170px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+
+    .monkey-card h3 {
+        margin: 6px 0;
+        font-size: 1.1rem;
+    }
+
+    .monkey-card .location {
+        color: #555;
+        font-size: 0.95rem;
+    }
